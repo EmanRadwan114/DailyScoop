@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
-// import "../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+import "../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import SearchBox from "../searchBox/SearchBox.jsx";
 
 export default function Navbar() {
