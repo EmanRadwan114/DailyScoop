@@ -11,6 +11,8 @@ The data is obtained from the news API Website ==> https://newsapi.org/, but the
   
 - In the search component, useSearchParam hook is used to get the searched kw from the url, then add this KW in the API endpoint to display the needed news only.
   
-- Images are optimized by using the Image component from next, and also a fallback image is added when there is an error in displaying the news' image. The image which has the error is known by using the onError event handler. 
+- Images are optimized by using the Image component from next, and also a fallback image is added when there is an error in displaying the news' image. The image which has the error is known by using the onError event handler.
 
+### Project's Video is attached
+https://github.com/EmanRadwan114/DailyScoop/assets/135042372/15150223-4e93-4a82-ace3-415c6863ebe6
 
