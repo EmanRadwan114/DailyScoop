@@ -3,7 +3,7 @@ import { getFeaturedNews } from "@/app/news/news";
 import SidebarNewsCard from "./../sidebarNews/SidebarNewsCard";
 
 export default async function Sidebar() {
-  const featuredNews = await getFeaturedNews("general");
+  const featuredNews = await getFeaturedNews("science");
 
   return (
     <aside>
@@ -14,13 +14,19 @@ export default async function Sidebar() {
         {featuredNews.map((article, index) => {
           if (index < 12) {
             return (
-              <div className="row g-2 align-items-center" key={index}>
-                <SidebarNewsCard
-                  img={article?.urlToImage}
-                  title={article?.title?.split(" ").splice(0, 10).join(" ")}
-                  url={article?.url}
-                />
-              </div>
+              <>
+                {article.title !== "[Removed]" ? (
+                  <div className="row g-2 align-items-center" key={index}>
+                    <SidebarNewsCard
+                      img={article?.urlToImage}
+                      title={article?.title?.split(" ").splice(0, 10).join(" ")}
+                      url={article?.url}
+                    />
+                  </div>
+                ) : (
+                  ""
+                )}
+              </>
             );
           }
         })}
