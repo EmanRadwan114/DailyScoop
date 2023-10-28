@@ -33,7 +33,8 @@ export default function SearchNews() {
       {isLoading ? (
         <Loading></Loading>
       ) : searchedDate?.length !== 0 && searchedDate !== null ? (
-        <News titleText="Searched News" data={searchedDate}></News>
+        // <News titleText="Searched News" data={searchedDate}></News>
+        ""
       ) : (
         <div className="d-flex justify-content-center align-items-center position-fixed start-0 end-0 top-0 bottom-0">
           <p className="m-0 fw-bold fs-4">No News Found 😔</p>

@@ -12,11 +12,6 @@ export default function SearchBox() {
       className="d-flex mx-auto py-3"
       onSubmit={(e) => {
         e.preventDefault();
-        // if (searchKW) {
-        //   navigate(`/search?q=${searchKW}`);
-        // } else {
-        //   navigate.push("/");
-        // }
         navigate.push(`/search?q=${searchKW}`);
       }}
       role="search"
